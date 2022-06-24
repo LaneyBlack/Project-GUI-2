@@ -4,6 +4,8 @@ import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
+import java.io.IOException;
+
 public class WelcomeController {
     @FXML
     private Label welcomeText;
@@ -14,12 +16,12 @@ public class WelcomeController {
     }
 
     @FXML
-    protected void newGame(){
-        App.setRoot("");
+    protected void gridSelector() throws IOException {
+        App.setRoot("gridselector");
     }
 
     @FXML
-    protected void highScores(){
-
+    protected void highScores() throws IOException {
+        App.setRoot("highscores");
     }
 }

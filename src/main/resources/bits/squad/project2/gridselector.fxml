@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bits.squad.project2.GridSelectorController">
+   <Pane fx:id="wrongSizeLabel" prefHeight="463.0" prefWidth="760.0">
+      <children>
+          <Label fx:id="welcomeText" alignment="CENTER" layoutX="-2.0" layoutY="159.0" prefHeight="23.0" prefWidth="760.0" text="Please select Grid size:">
+              <font>
+                  <Font name="Calibri Light" size="20.0" />
+              </font>
+          </Label>
+         <GridPane layoutX="99.0" layoutY="178.0" prefHeight="94.0" prefWidth="560.0">
+           <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="407.2857666015625" minWidth="10.0" prefWidth="378.28578404017856" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="390.2857142857142" minWidth="10.0" prefWidth="381.1427873883928" />
+           </columnConstraints>
+           <rowConstraints>
+             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+           </rowConstraints>
+            <children>
+               <GridPane prefHeight="101.0" prefWidth="379.0">
+                 <columnConstraints>
+                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                   <RowConstraints maxHeight="91.00000871930804" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+                   <RowConstraints maxHeight="78.85718427385603" minHeight="10.0" prefHeight="36.71428571428572" vgrow="SOMETIMES" />
+                 </rowConstraints>
+                  <children>
+                     <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="107.0" text="Width" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                        <font>
+                           <Font name="Calibri Light" size="16.0" />
+                        </font>
+                     </Label>
+                     <ChoiceBox fx:id="width" prefHeight="30.0" prefWidth="73.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  </children>
+               </GridPane>
+               <GridPane prefHeight="150.0" prefWidth="365.0" GridPane.columnIndex="1">
+                 <columnConstraints>
+                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                   <RowConstraints maxHeight="76.28571428571428" minHeight="10.0" prefHeight="65.42859758649553" vgrow="SOMETIMES" />
+                   <RowConstraints maxHeight="47.714242117745535" minHeight="10.0" prefHeight="39.14283098493304" vgrow="SOMETIMES" />
+                 </rowConstraints>
+                  <children>
+                     <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="107.0" text="Height" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                        <font>
+                           <Font name="Calibri Light" size="16.0" />
+                        </font>
+                     </Label>
+                     <ChoiceBox fx:id="height" prefHeight="30.0" prefWidth="73.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  </children>
+               </GridPane>
+            </children>
+         </GridPane>
+         <Button alignment="CENTER" contentDisplay="CENTER" layoutX="338.0" layoutY="305.0" mnemonicParsing="false" onAction="#start" prefHeight="38.0" prefWidth="80.0" style="-fx-background-color: lightgreen;" text="Start" textAlignment="CENTER">
+            <font>
+               <Font size="19.0" />
+            </font>
+         </Button>
+         <Label fx:id="wrongSize" alignment="CENTER" layoutX="268.0" layoutY="362.0" prefHeight="17.0" prefWidth="225.0" text="Grid must have an even number of fields!" textAlignment="CENTER" textFill="#be0000" underline="true" />
+      </children>
+   </Pane>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

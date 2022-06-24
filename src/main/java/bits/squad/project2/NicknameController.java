@@ -4,7 +4,8 @@ import javafx.fxml.FXML;
 
 import java.awt.*;
 
-public class LoginController {
+public class NicknameController {
     @FXML
     TextArea textArea;
+
 }
