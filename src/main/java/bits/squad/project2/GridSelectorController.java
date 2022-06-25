@@ -20,8 +20,6 @@ public class GridSelectorController implements Initializable {
     @FXML
     private Label wrongSize;
 
-    private Integer [] sizes = {1,2,3,4,5,6,7,8};
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         wrongSize.setVisible(false);
@@ -32,13 +30,23 @@ public class GridSelectorController implements Initializable {
     }
 
     @FXML
-    private void start() throws IOException {
+    private void startGame() throws IOException {
         System.out.println(width.getValue() * height.getValue());
         if ((width.getValue() * height.getValue())%2!=0){
+            if(wrongSize.isVisible()){
+                wrongSize.setVisible(false);
+                try {
+                    Thread.sleep(400);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                wrongSize.setVisible(true);
+            }
             wrongSize.setVisible(true);
         } else {
-            Game.setGridY(height.getValue());
-            Game.setGridX(width.getValue());
+            Game.setGridHeight(height.getValue());
+            Game.setGridWidth(width.getValue());
+
             App.setRoot("game");
         }
     }

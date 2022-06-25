@@ -1,14 +1,14 @@
 package bits.squad.project2;
 
 public class Game {
-    private static int gridY;
-    private static int gridX;
+    private static int gridHeight;
+    private static int gridWidth;
 
-    public static void setGridY(int gridY) {
-        Game.gridY = gridY;
+    public static void setGridHeight(int gridHeight) {
+        Game.gridHeight = gridHeight;
     }
 
-    public static void setGridX(int gridX) {
-        Game.gridX = gridX;
+    public static void setGridWidth(int gridWidth) {
+        Game.gridWidth = gridWidth;
     }
 }
