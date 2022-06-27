@@ -1,6 +1,3 @@
-/*body {*/
-/*    -fx-background-image: ;*/
-/*}*/
-
-/*@keyframes gradient {*/
-/*}*/
+.gradientBG {
+    /*-fx-background-color: linear-gradient(from 25px 25px to 500px 500px, #002d82, #026bb2);*/
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="500.0" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bits.squad.project2.Controllers.HighScoresController">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="260.0" layoutY="8.0" prefHeight="30.0" prefWidth="230.0" text="HighScores">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="playersTable" layoutX="15.0" layoutY="44.0" maxHeight="600.0" maxWidth="720.0" prefHeight="540.0" prefWidth="720.0">
+        <columns>
+          <TableColumn fx:id="nicknameColumn" maxWidth="324.57142066955566" minWidth="50.0" prefWidth="324.57142066955566" text="Nickname" />
+          <TableColumn fx:id="timeColumn" maxWidth="313.14288330078125" minWidth="50.0" prefWidth="229.14288330078125" text="Time" />
+            <TableColumn fx:id="gridSizeColumn" maxWidth="236.0" minWidth="50.0" prefWidth="149.142822265625" text="Grid Size" />
+        </columns>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </TableView>
+</VBox>
