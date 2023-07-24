@@ -2,7 +2,7 @@
 Cards Opening Game (JFX) - Semester Project on GUI and OOP in Java (PJATK)
 
 This was the last semester project on this subject.
-It features a card opening game where you have to open same cards at the same move.
+It features a momory game where you have to open same cards at the same move (the should be a even number of cards of course).
 Project features a welcome menu:
 ![image](https://github.com/LaneyBlack/Project-GUI-2/assets/44290162/634addeb-92bd-496d-837d-dbfde6273ada)
 a highscore menu, where you can sort player scores by columns and scroll the highscore table:
