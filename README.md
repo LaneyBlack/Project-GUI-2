@@ -1,5 +1,6 @@
 # Project-GUI-2
 Cards Opening Game (JFX) - Semester Project on GUI and OOP in Java (PJATK) 
+
 2nd Semester Project
 
 This was the last semester project on this subject.
