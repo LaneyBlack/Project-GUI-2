@@ -19,7 +19,7 @@ public class CardView extends ImageView {
     private static Image backside = null;
     private boolean isOpened;
     private SequentialTransition open;
-    private SequentialTransition close;
+    private SequentialTransition close; 
 
     public CardView(int imageId) {
         super(backside);
