@@ -94,6 +94,7 @@ public class Game implements Initializable {
     }
 
 
+
     public void startHandler() {
         checker = new Thread(() -> {
             while (!Thread.interrupted()) {
