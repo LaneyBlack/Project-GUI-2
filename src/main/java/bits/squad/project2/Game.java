@@ -156,7 +156,6 @@ public class Game implements Initializable {
         return chosenCards[0];
     }
 
-
     public void setFirstCard(CardView value) {
         chosenCards[0] = value;
     }
