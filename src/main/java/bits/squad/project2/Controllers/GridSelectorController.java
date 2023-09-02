@@ -35,7 +35,7 @@ public class GridSelectorController implements Initializable {
             throw  new IOException("Wrong width or height!");
         } else {
             Game.setGridHeight(heightBox.getValue());
-            Game.setGridWidth(widthBox.getValue());
+            Game.setGridWidth(widthBox.getValue()); 
             App.setRoot("game");
         }
     }
