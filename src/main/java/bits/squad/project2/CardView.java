@@ -13,7 +13,7 @@ import javafx.util.Duration;
 
 public class CardView extends ImageView {
     private static final double scale = 0.95;
-    private static DropShadow shadowHover = new DropShadow(5, 4, 4, Color.BLACK);
+    private static DropShadow shadowHover = new DropShadow(5, 4, 4, Color.BLACK); 
     private static DropShadow shadowDown = new DropShadow(2, 2, 2, Color.BLACK);
     private int imageId;
     private static Image backside = null;
