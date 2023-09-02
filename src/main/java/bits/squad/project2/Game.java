@@ -108,6 +108,7 @@ public class Game implements Initializable {
                         setFirstCard(null);
                         setSecondCard(null);
                         progressBar.setProgress((double)Math.round((1/(double)(gridWidth*gridHeight/2) + progressBar.getProgress())*100)/100);
+
                         if (progressBar.getProgress() >= 1) {
                             timer.stop();
                             try {
